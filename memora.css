@@ -605,11 +605,11 @@ footer {
 
 .contact {
     font-size: 13px;
-    color: var(--blue);
+    color: black;
 }
 
 .contact a {
-    color: var(--blue);
+    color: black;
     text-decoration: none;
     transition: opacity 0.2s;
 }

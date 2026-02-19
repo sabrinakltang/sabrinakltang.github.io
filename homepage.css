@@ -232,11 +232,11 @@ footer {
 
 .contact {
     font-size: 0.78rem;
-    color: #7b8fd6;
+    color: black;
 }
 
 .contact a {
-    color: #7b8fd6;
+    color: black;
     text-decoration: none;
     transition: opacity 0.3s;
 }
