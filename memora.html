@@ -3,201 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memora - Portfolio</title>
+    <title>Memora — Sabrina Tang</title>
     <link rel="stylesheet" href="memora.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="grid">
-                <a href="homepage.html">
-                    <div class="logo"></div>
-                </a>
-                <nav>
-                    <a href="projectpage.html">Work</a>
-                    <a href="aboutme.html">About Me</a>
-                </nav>
-            </div>
-        </div>
+
+    <!-- Top Nav -->
+    <header class="top-nav">
+        <a href="homepage.html" class="nav-logo">
+            <div class="logo"></div>
+        </a>
+        <nav class="nav-links">
+            <a href="aboutme.html">About Me</a>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="grid">
-                <div class="hero-heading-wrapper">
-                    <h1 class="hero-title">A new way to approach </h1>
-                    <h2 class="hero-subtitle">cognitive decline</h2>
-                </div>
-                
-                <div class="hero-image-wrapper">
+    <!-- Page Layout -->
+    <div class="page-layout">
+
+        <!-- Fixed Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <p class="sidebar-project-label">Memora</p>
+                <nav class="sidebar-nav">
+                    <a href="#overview" class="sidebar-link active" data-section="overview">Overview</a>
+                    <a href="#background" class="sidebar-link" data-section="background">Background</a>
+                    <a href="#process" class="sidebar-link" data-section="process">The Process</a>
+                    <a href="#designs" class="sidebar-link" data-section="designs">The Designs</a>
+                    <a href="#accessibility" class="sidebar-link" data-section="accessibility">Accessibility</a>
+                    <a href="#results" class="sidebar-link" data-section="results">Results</a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Hero -->
+            <section class="hero-section">
+                <div class="hero-tag">Case Study</div>
+                <h1 class="hero-title">A new way to approach<br><em>cognitive decline</em></h1>
+                <div class="hero-image">
                     <img src="./img/landingmemora.png" alt="Memora iPad Interface">
                 </div>
-
-                <div class="hero-details">
-                    <div class="detail-item">
-                        <h3>Team</h3>
-                        <p>Sabrina Tang<br>Khushy Brar</p>
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Team</span>
+                        <span class="meta-value">Sabrina Tang<br>Khushy Brar</span>
                     </div>
-                    <div class="detail-item">
-                        <h3>Timeline</h3>
-                        <p>Sept 2025 - Dec 2025</p>
+                    <div class="meta-item">
+                        <span class="meta-label">Timeline</span>
+                        <span class="meta-value">Sept – Dec 2025</span>
                     </div>
-                    <div class="detail-item">
-                        <h3>Outcomes</h3>
-                        <ul>
-                            <li>Delivered an accessible, user-friendly system that elderly individuals can integrate into their daily routines at home.</li>
-                            <li>Uses a human-computer interface framework approach to design an interactive system</li>
-                        </ul>
+                    <div class="meta-item">
+                        <span class="meta-label">Skills</span>
+                        <span class="meta-value">Human-Computer Interaction<br>UX / Interaction Design</span>
                     </div>
-                    <div class="detail-item">
-                        <h3>Skills</h3>
-                        <p>Human-Computer Interaction<br>User Experience/Interaction</p>
+                    <div class="meta-item">
+                        <span class="meta-label">Outcome</span>
+                        <span class="meta-value">Accessible daily cognitive exercise app for elderly users</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Overview Section -->
-    <section class="overview">
-        <div class="container">
-            <div class="grid">
-                <div class="overview-content">
-                    <h2>Memora</h2>
-                    <p>Memora is a cross-platform application, optimized for iPad, that engages elderly users in short, evidence-based cognitive exercises. Its primary goal is to enhance memory and attention, serving as both a preventive measure and a potential delay of cognitive decline, including early effects of dementia. By encouraging consistent, daily engagement, Memora supports users in maintaining long-term cognitive health, potentially reducing future challenges associated with memory loss. The scope of this project focuses on designing an accessible, user-friendly system that elderly individuals can integrate into their own routines. The design prioritizes simplicity, motivation, and emotional comfort, allowing users to complete exercises at their own pace in a supportive environment.</p>
-                    
-                    <p>Memora's goal aligns with SDG 3: Good Health and Well-Being by promoting preventive mental care, supporting long-term cognitive health, and enhancing the quality of life for an aging population through UI design choices tailored to older adults that leverage evidence-based cognitive activities. This contributes to advance SDG 3.4 by reducing premature mortality from non-communicable diseases through prevention and treatment, and by promoting mental health and well-being.</p>
+            <!-- Overview -->
+            <section id="overview" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">Overview</h2>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="section-body">
+                    <p class="lead-text">Memora is a cross-platform application, optimized for iPad, that engages elderly users in short, evidence-based cognitive exercises.</p>
+                    <p>Its primary goal is to enhance memory and attention, serving as both a preventive measure and a potential delay of cognitive decline, including early effects of dementia. By encouraging consistent, daily engagement, Memora supports users in maintaining long-term cognitive health, potentially reducing future challenges associated with memory loss.</p>
+                    <p>The design prioritizes simplicity, motivation, and emotional comfort — allowing users to complete exercises at their own pace in a supportive environment.</p>
 
-    <!-- Research Product -->
-    <section class="research-product">
-        <div class="container">
-            <div class="grid">
-                <div class="research-product-content">
-                    <h2>Research Product</h2>
-                    <img src="./img/homescreenmemora.png" alt="Memora Product">
+                    <div class="callout">
+                        <span class="callout-label">SDG Alignment</span>
+                        <p>Memora's goal aligns with <strong>SDG 3: Good Health and Well-Being</strong> by promoting preventive mental care and enhancing the quality of life for an aging population. This contributes to SDG 3.4 — reducing premature mortality from non-communicable diseases through prevention and promoting mental health and well-being.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Home Screen -->
-    <section class="home-screen">
-        <div class="container">
-            <div class="grid">
-                <h2 class="home-screen-title">The Home Screen</h2>
-                
-                <div class="home-screen-text">
-                    <p>Older adults have different sensory and perception capabilities, in particular, they experience age-related declines in visual acuity and contrast sensitivity, making perception a key factor in design success. In Memora, these insights informed specific design choices, including the minimalist use of a sans-serif typeface, structured layouts with larger, prominent buttons, and clear visual hierarchy to support easy recognition. Additionally, incorporating a warm, medium-saturation colour palette aims to promote comfort, emotional engagement, and visual clarity. Collectively, these sensory design adjustments to colour and font size help the elderly target group perceive design elements more accurately and efficiently.</p>
-                    
-                    <p>Age-related changes in fine motor control, reaction speed, and hand-eye coordination can make digital interaction more challenging for older adults. These declines affect users' ability to perform gestures accurately, such as tapping, swiping, or dragging, making the interface itself an essential consideration in application design. Building on this, research emphasizes that motor limitations can make small, complex interfaces difficult to navigate due to the complexity of gestures. These findings emphasize the importance of designing with larger interactive elements that allow for accessible input distance, reducing error rate and increasing task success. In Memora, these insights guided design decisions to simplify interactions, prioritize spacing between elements, and especially single-action gestures such as tapping instead of swiping or dragging. The screen layouts avoid complex multitouch interactions and minimize the need for precise hand movements.</p>
+            <!-- Background -->
+            <section id="background" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Background</h2>
                 </div>
+                <div class="section-body">
+                    <p class="lead-text">Cognitive decline is one of the most pressing public health challenges of our time — yet most digital interventions fail to account for how older adults actually interact with technology.</p>
+                    <p>Research from the National Institute on Aging (2019) shows that frequent participation in cognitively stimulating activities can help delay the onset of cognitive decline. However, existing apps are often designed with younger users in mind, making them inaccessible, frustrating, or simply unused by the elderly population they aim to help.</p>
+                    <p>Memora was designed from the ground up with the elderly user at the center — not as an afterthought.</p>
 
-                <div class="home-screen-images">
-                    <div class="home-screen-left">
-                        <div class="game-preview">
-                            <img src="./img/attentiongame.png" alt="Attention Game">
-                            <h3>The Attention Game</h3>
+                    <div class="two-col">
+                        <div class="highlight-card">
+                            <span class="card-number">3 domains</span>
+                            <p>Memory, attention, and logic — the three key cognitive areas Memora targets through daily exercises.</p>
                         </div>
-                        <div class="game-preview">
-                            <img src="./img/memorygame.png" alt="Memory Game">
-                            <h3>The Memory Game</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="home-screen-right">
-                        <div class="home-screen-logic">
-                            <img src="./img/logicgame.png" alt="Logic Game">
-                            <h3>The Logic Game</h3>
+                        <div class="highlight-card">
+                            <span class="card-number">5–10 min</span>
+                            <p>Daily session length, designed to be achievable and habit-forming without causing fatigue.</p>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="game-descriptions">
-                    <div class="game-descriptions-left">
-                        <p><strong>Memory Game (Match-It Style):</strong> Memora's memory game centers on a classic card-pairing format featuring everyday household objects to stimulate recognition and episodic memory recall. By presenting familiar items such as spoons, toothbrushes, and hats, the game provides emotional comfort and reflects older users' real-world contexts.</p>
-                        
-                        <p><strong>Attention Game (Visual Search Training):</strong> Memora's attention game trains users to maintain selective visual focus by identifying specific target stimuli among distractors. These tasks reflect everyday visual scanning tasks, such as searching for ingredients or even reading text, focusing on the user's speed and accuracy.</p>
-                        
-                        <p><strong>Logic Game (Reasoning and Everyday Function):</strong> Memora's logic game focuses on pattern recognition, decision-making skill, and problem-solving using everyday scenarios. This approach promotes the development of transferable reasoning skills.</p>
+            <!-- Process -->
+            <section id="process" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">The Process</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">Our design process was grounded in HCI research and evidence-based design principles, ensuring every decision was informed by how elderly users perceive and interact with digital interfaces.</p>
 
-                        <p><strong>The Daily Challenge (Sustained Engagement):</strong> Memora incorporates a Daily Challenge mode, which offers a randomized mix of memory, attention, and logic tasks in short 5-10 minute sessions to encourage habit-building and long-term engagement.</p>
-                    </div>
-                    
-                    <div class="game-descriptions-right">
-                        
-                        <p>Cognitive decline due to aging or conditions such as dementia can impair memory, attention, and reasoning, making it essential to design systems that reduce unnecessary cognitive load while promoting mental engagement. Research from the National Institute on Aging (2019) emphasizes that frequent participation in cognitively stimulating activities can help delay the onset of cognitive decline, highlighting the importance of designing applications that balance usability and cognitive challenge. Research by Chiu, Hwang, and Tseng (2020) highlights that older adult users prefer meaning through images rather than text in interfaces, thereby enhancing comprehension and reducing cognitive load. Research by Ko et al. (2022) suggests that older adults perform best with brief, meaningful tasks paired with text labels, enabling them to connect interface elements to real-world concepts. However, users with mild cognitive impairment show reduced accuracy in identifying abstract or ambiguous icons, emphasizing the need for careful icon selection and text labelling. By offloading cognitive load through strategic design such as action feedback and encouraging tasks through visual cues, Memora helps users challenge their memory, attention, and logic without fatigue. The tasks should also prioritize strengthening or maintaining cognitive function in two key domains: grammatical reasoning and episodic memory.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <h3 class="subsection-title">Understanding the User</h3>
+                    <p>Older adults experience age-related declines in visual acuity, contrast sensitivity, fine motor control, reaction speed, and hand-eye coordination. These changes directly affect how they engage with digital interfaces — making perception and interaction design critical factors in this project's success.</p>
+                    <p>Research by Chiu, Hwang, and Tseng (2020) highlights that older adult users prefer meaning through images rather than text, enhancing comprehension and reducing cognitive load. Ko et al. (2022) further suggests that older adults perform best with brief, meaningful tasks paired with text labels — enabling them to connect interface elements to real-world concepts.</p>
 
-    <!-- Settings Section -->
-    <section class="settings-section">
-        <div class="container">
-            <div class="grid">
-                <div class="settings-text">
-                    <h2>The Settings Screen</h2>
-                    <p>Memora's setting screen has the ability to adjust text size, color mode, and sound. This allows for enhanced accessibility for an older audience.</p>
-                </div>
-                <div class="settings-images">
-                    <img src="./img/normalfont.png" alt="Settings Normal Font">
-                    <img src="./img/largefont.png" alt="Settings Large Font">
-                    <img src="./img/xlargefont.png" alt="Settings XLarge Font">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Statistics Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="grid">
-                <div class="stats-image">
-                    <img src="./img/statistics.png" alt="Statistics Screen">
-                </div>
-                <div class="stats-text">
-                    <h2>The Statistics Screen</h2>
-                    <p>Providing users with feedback on their own performance can enhance motivation and engagement. A recent review by Moore et al. (2021) found that self-tracking technologies allow older adults to see feedback and progress, which supports continued use and goal-oriented behaviour. In Memora, visual statistics and performance indicators guide users how they are improving over time, reinforcing motivation and encouraging regular daily app engagement.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Next Project -->
-    <section class="next-project">
-        <div class="container">
-            <div class="grid">
-                <div class="next-project-content">
-                    <h2>next project</h2>
-                    <div class="next-project-link">
-                        <a href="inly.html">Inly</a>
-                        <span class="arrow">→</span>
+                    <h3 class="subsection-title">Design Principles</h3>
+                    <div class="principles-grid">
+                        <div class="principle">
+                            <span class="principle-title">Simplicity First</span>
+                            <p>Minimalist sans-serif typeface, structured layouts, and larger prominent buttons to support easy recognition.</p>
+                        </div>
+                        <div class="principle">
+                            <span class="principle-title">Reduce Cognitive Load</span>
+                            <p>Action feedback, visual cues, and image-forward design to help users engage without fatigue.</p>
+                        </div>
+                        <div class="principle">
+                            <span class="principle-title">Motor Accessibility</span>
+                            <p>Single-action gestures only — tapping, not swiping or dragging. Generous spacing between all interactive elements.</p>
+                        </div>
+                        <div class="principle">
+                            <span class="principle-title">Emotional Comfort</span>
+                            <p>Warm, medium-saturation colour palette to promote calm, engagement, and visual clarity for older eyes.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="grid">
-                <div class="contact">
-                    Get in touch <a href="mailto:skt9@sfu.ca">skt9@sfu.ca</a>
+            <!-- Designs -->
+            <section id="designs" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">The Designs</h2>
                 </div>
+                <div class="section-body">
+
+                    <h3 class="subsection-title">Home Screen</h3>
+                    <p>The home screen greets users by name and presents four clearly distinguished game modes as large, tappable cards. Visual hierarchy, colour coding, and icons help users quickly identify and navigate to their preferred activity.</p>
+                    <div class="full-image">
+                        <img src="./img/homescreenmemora.png" alt="Memora Home Screen">
+                    </div>
+
+                    <h3 class="subsection-title">The Games</h3>
+                    <p>Each game targets a specific cognitive domain, using familiar real-world scenarios to minimise learning curve and maximise comfort.</p>
+
+                    <div class="games-grid">
+                        <div class="game-card">
+                            <div class="game-image">
+                                <img src="./img/memorygame.png" alt="Memory Game">
+                            </div>
+                            <div class="game-info">
+                                <span class="game-tag">Memory</span>
+                                <h4>Match-It</h4>
+                                <p>A classic card-pairing format featuring everyday household objects — spoons, toothbrushes, hats — to stimulate recognition and episodic memory recall through familiar, emotionally comfortable imagery.</p>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="game-image">
+                                <img src="./img/attentiongame.png" alt="Attention Game">
+                            </div>
+                            <div class="game-info">
+                                <span class="game-tag">Attention</span>
+                                <h4>Visual Search</h4>
+                                <p>Users identify specific target stimuli among distractors, reflecting everyday visual scanning tasks like searching for ingredients or reading text — measuring speed and accuracy.</p>
+                            </div>
+                        </div>
+                        <div class="game-card">
+                            <div class="game-image">
+                                <img src="./img/logicgame.png" alt="Logic Game">
+                            </div>
+                            <div class="game-info">
+                                <span class="game-tag">Logic</span>
+                                <h4>Pattern & Reason</h4>
+                                <p>Pattern recognition, decision-making, and problem-solving through everyday scenarios. Promotes transferable reasoning skills that support real-world function.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="callout">
+                        <span class="callout-label">Daily Challenge</span>
+                        <p>A randomized mix of memory, attention, and logic tasks delivered in short 5–10 minute sessions. Designed to encourage habit-building and sustained long-term engagement without overwhelming the user.</p>
+                    </div>
+
+                    <h3 class="subsection-title">Statistics Screen</h3>
+                    <p>A recent review by Moore et al. (2021) found that self-tracking technologies allow older adults to see feedback and progress, supporting continued use and goal-oriented behaviour. The statistics screen in Memora translates this into clear visual performance indicators — showing users how they are improving over time and reinforcing motivation to return daily.</p>
+                    <div class="split-image">
+                        <img src="./img/statistics.png" alt="Statistics Screen">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Accessibility -->
+            <section id="accessibility" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Accessibility</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">Accessibility was not an add-on — it was the foundation. The settings screen allows users to customise their experience in three key ways.</p>
+
+                    <div class="settings-row">
+                        <div class="setting-item">
+                            <img src="./img/normalfont.png" alt="Normal Font Size">
+                            <span class="setting-label">Default</span>
+                        </div>
+                        <div class="setting-item">
+                            <img src="./img/largefont.png" alt="Large Font Size">
+                            <span class="setting-label">Large Text</span>
+                        </div>
+                        <div class="setting-item">
+                            <img src="./img/xlargefont.png" alt="XL Font Size">
+                            <span class="setting-label">Extra Large Text</span>
+                        </div>
+                    </div>
+
+                    <div class="three-col">
+                        <div class="access-card">
+                            <span class="access-icon">Aa</span>
+                            <h4>Text Size</h4>
+                            <p>Three adjustable text size options ensure readability for users with varying levels of visual acuity.</p>
+                        </div>
+                        <div class="access-card">
+                            <span class="access-icon">◑</span>
+                            <h4>Colour Mode</h4>
+                            <p>High-contrast and reduced-glare modes accommodate different lighting conditions and visual sensitivities.</p>
+                        </div>
+                        <div class="access-card">
+                            <span class="access-icon">♪</span>
+                            <h4>Sound</h4>
+                            <p>Audio feedback can be toggled on or off, allowing users to customise their sensory experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section id="results" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">06</span>
+                    <h2 class="section-title">Results & Takeaways</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">Memora delivered an accessible, user-friendly system that elderly individuals can integrate into their daily routines at home — meeting both its usability and wellbeing goals.</p>
+
+                    <h3 class="subsection-title">Key Outcomes</h3>
+                    <div class="outcomes-list">
+                        <div class="outcome-item">
+                            <span class="outcome-dot"></span>
+                            <p><strong>Accessible daily engagement.</strong> The combination of large touch targets, simple gestures, and familiar visual content made the app approachable for elderly users with varying levels of digital literacy.</p>
+                        </div>
+                        <div class="outcome-item">
+                            <span class="outcome-dot"></span>
+                            <p><strong>Evidence-based design.</strong> Every UI decision was grounded in HCI research specific to elderly users, creating a design that is both intuitive and cognitively appropriate.</p>
+                        </div>
+                        <div class="outcome-item">
+                            <span class="outcome-dot"></span>
+                            <p><strong>Scalable accessibility system.</strong> The three-tier text sizing and customisable settings lay the groundwork for a flexible, inclusive platform that can grow with users' needs.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">Takeaways</h3>
+                    <div class="takeaways-grid">
+                        <div class="takeaway">
+                            <span class="takeaway-num">01</span>
+                            <p><strong>Design for the margins.</strong> Designing for users with the most constraints — elderly adults with motor and visual decline — produces interfaces that are better for everyone.</p>
+                        </div>
+                        <div class="takeaway">
+                            <span class="takeaway-num">02</span>
+                            <p><strong>Research is not optional.</strong> Without an understanding of elderly-specific HCI research, it would have been easy to design an app that looked good but failed its users entirely.</p>
+                        </div>
+                        <div class="takeaway">
+                            <span class="takeaway-num">03</span>
+                            <p><strong>Familiarity reduces friction.</strong> Using everyday objects and real-world scenarios in exercises removed the learning curve and immediately made the experience feel safe and engaging.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Project -->
+            <section class="next-section">
+                <span class="next-label">next project</span>
+                <a href="inly.html" class="next-link">Inly →</a>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="contact">Get in touch <a href="mailto:skt9@sfu.ca">skt9@sfu.ca</a></div>
                 <div class="footer-nav">
-                    <a href="projectpage.html">Work</a>
+                    <a href="homepage.html">Work</a>
                     <a href="aboutme.html">About Me</a>
                 </div>
-            </div>
-        </div>
-    </footer>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        // Sidebar active state on scroll
+        const sections = document.querySelectorAll('.content-section');
+        const links = document.querySelectorAll('.sidebar-link');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    links.forEach(l => l.classList.remove('active'));
+                    const id = entry.target.getAttribute('id');
+                    const active = document.querySelector(`.sidebar-link[data-section="${id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        sections.forEach(s => observer.observe(s));
+    </script>
 </body>
 </html>

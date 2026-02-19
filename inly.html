@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inly — Sabrina Tang</title>
+    <link rel="stylesheet" href="inly.css">
+</head>
+<body>
+
+    <!-- Top Nav -->
+    <header class="top-nav">
+        <a href="homepage.html" class="nav-logo">
+            <div class="logo"></div>
+        </a>
+        <nav class="nav-links">
+            <a href="homepage.html">Work</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
+    </header>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+
+        <!-- Fixed Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <p class="sidebar-project-label">Inly</p>
+                <nav class="sidebar-nav">
+                    <a href="#overview" class="sidebar-link active" data-section="overview">Overview</a>
+                    <a href="#background" class="sidebar-link" data-section="background">Background</a>
+                    <a href="#features" class="sidebar-link" data-section="features">Features</a>
+                    <a href="#designs" class="sidebar-link" data-section="designs">The Designs</a>
+                    <a href="#challenges" class="sidebar-link" data-section="challenges">Challenges</a>
+                    <a href="#reflection" class="sidebar-link" data-section="reflection">Reflection</a>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Hero -->
+            <section class="hero-section">
+                <div class="hero-tag">Case Study</div>
+                <h1 class="hero-title">Turning inward in a<br><em>distracted world</em></h1>
+                <div class="hero-image">
+                    <img src="./img/inly.png" alt="Inly App on Phones">
+                </div>
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Team</span>
+                        <span class="meta-value">Sabrina Tang<br>Khushy Brar</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Timeline</span>
+                        <span class="meta-value">Sept – Dec 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Stack</span>
+                        <span class="meta-value">React Native<br>Firebase / Firestore<br>Expo</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Platforms</span>
+                        <span class="meta-value">iOS & Android</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Overview -->
+            <section id="overview" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">Overview</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">Inly is a mood-tracking social application that asks users to turn inwards — promoting better emotional awareness in today's hyper-connected world.</p>
+                    <p>Built with React Native, Inly allows users to document their emotional states through photos, captions, and songs — then share them with friends on a social feed. The application combines personal journaling with social connectivity, creating a supportive environment where emotional reflection feels natural rather than clinical.</p>
+                    <p>Users choose from six core emotions, then add a photo, note, or song to express how they're feeling. This "mood note" is shared on a social feed where friends can see how you're doing and leave words of support.</p>
+
+                    <div class="two-col">
+                        <div class="highlight-card">
+                            <span class="card-number">6</span>
+                            <p>Core emotions — happy, sad, angry, surprised, fear, disgusted — each with its own colour overlay and visual identity.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="card-number">2</span>
+                            <p>Platforms supported — fully cross-platform, built for both iOS and Android using React Native and Expo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Background -->
+            <section id="background" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Background</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">The idea for Inly grew out of a frustration with existing emotional wellness apps — and a desire to merge social connection with genuine self-reflection.</p>
+                    <p>Sabrina was inspired by Finch, a self-care application, but found the long setup process and goal configuration tedious. Inly was designed to let users re-center and reconnect with their inner lives without friction — no lengthy onboarding, no rigid routines.</p>
+                    <p>The core question driving the project: <em>can a social app actually help people feel more present, rather than more distracted?</em></p>
+
+                    <div class="callout">
+                        <span class="callout-label">Design Intention</span>
+                        <p>Inly asks users to turn inwards — using social technology not as a tool for distraction, but as a mirror for emotional awareness. The social feed becomes a shared space for vulnerability, not performance.</p>
+                    </div>
+
+                    <h3 class="subsection-title">Initial Design</h3>
+                    <p>The initial wireframes envisioned a simple four-screen flow: splash, authentication, emotion selection, and a social home feed. The mood calendar was conceived early on as a way for users to visualize their emotional patterns over time — seeing their feelings at a glance.</p>
+                    <div class="full-image">
+                        <img src="./img/inly.png" alt="Initial UI Design Wireframes">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section id="features" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Features</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">Inly was built around a core user flow: check in, reflect, post, connect. Each feature was designed to make emotional reflection feel effortless.</p>
+
+                    <h3 class="subsection-title">Authentication System</h3>
+                    <p>A full sign-up and login flow built on Firebase Authentication. Users can sign in with either their email address or their username — a deliberate UX decision to make the app feel more personal. Behind the scenes, a two-step lookup resolves usernames to their linked email before authenticating with Firebase.</p>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <span class="feature-icon">🔐</span>
+                            <h4>Secure Sign-Up</h4>
+                            <p>Username uniqueness checking, password confirmation, and minimum length validation — all backed by Firebase Authentication and Firestore user storage.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">👋</span>
+                            <h4>Welcome Back</h4>
+                            <p>AsyncStorage preserves the last logged-in username so returning users see a personalized greeting on the sign-in screen.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📮</span>
+                            <h4>Mood Posts</h4>
+                            <p>Six emotions, each with a unique colour overlay. Users can attach a photo (camera or library), write a note, and search for a matching song via the Deezer API.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">📅</span>
+                            <h4>Mood Calendar</h4>
+                            <p>A monthly calendar view that maps daily mood entries to dates — letting users see their emotional patterns at a glance over time.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">👥</span>
+                            <h4>Social Feed</h4>
+                            <p>Real-time Firebase onSnapshot listeners keep the home feed updated. Posts display emotion overlays, profile photos, timestamps, captions, and songs.</p>
+                        </div>
+                        <div class="feature-card">
+                            <span class="feature-icon">⚙️</span>
+                            <h4>Profile & Settings</h4>
+                            <p>Users can upload a profile photo, view their post count, and manage account settings including notifications and logout.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">The Posting Flow</h3>
+                    <p>The posting experience is designed to feel lightweight and expressive. Users first select one of six emotions — unselected options desaturate, drawing focus to the chosen feeling. A conditional "Continue" button only appears after a selection is made, preventing empty submissions. From there, users add a photo, caption, and optional song before posting to the feed.</p>
+                </div>
+            </section>
+
+            <!-- Designs -->
+            <section id="designs" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">The Designs</h2>
+                </div>
+                <div class="section-body">
+
+                    <h3 class="subsection-title">Authentication Flow</h3>
+                    <p>The authentication screens keep things minimal — centered layout, clean inputs, and a single primary action per screen. The sign-in screen greets returning users by name, making the experience feel warm rather than transactional.</p>
+
+                    <div class="screen-row">
+                        <div class="screen-item">
+                            <div class="screen-frame">
+                                <img src="./img/inly.png" alt="Splash Screen">
+                            </div>
+                            <span class="screen-label">Splash</span>
+                        </div>
+                        <div class="screen-item">
+                            <div class="screen-frame">
+                                <img src="./img/inly.png" alt="Sign Up Screen">
+                            </div>
+                            <span class="screen-label">Sign Up</span>
+                        </div>
+                        <div class="screen-item">
+                            <div class="screen-frame">
+                                <img src="./img/inly.png" alt="Sign In Screen">
+                            </div>
+                            <span class="screen-label">Sign In</span>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">Emotion Selection & Mood Entry</h3>
+                    <p>The emotion selection screen presents six pastel-tinted character icons in a responsive grid. Selecting an emotion saturates it while desaturating the rest — a subtle but effective way of making the choice feel considered. The mood entry screen follows, where users compose their post with a photo, caption, and song.</p>
+
+                    <div class="callout">
+                        <span class="callout-label">Design Detail</span>
+                        <p>Each emotion maps to a distinct colour overlay applied to the user's photo — so the home feed becomes a visual tapestry of how people are feeling, without a single word needed.</p>
+                    </div>
+
+                    <h3 class="subsection-title">Home Feed</h3>
+                    <p>The home screen displays mood entries as square postcards, with the user's and friends' posts sorted in reverse chronological order. Each card shows the emotion-tinted photo, profile picture, username, timestamp, caption, and linked song. When a friend's image can't render due to storage constraints, a gradient background maintains visual consistency.</p>
+
+                    <h3 class="subsection-title">Journal & Social Screens</h3>
+                    <p>The journal screen maps mood entries to a monthly calendar — each day's cell fills with the emotion colour of that day's post, giving users an immediate emotional overview of their month. The social screen manages the friends list with an add-friends modal that searches by username.</p>
+                </div>
+            </section>
+
+            <!-- Challenges -->
+            <section id="challenges" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Challenges</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">Building Inly surfaced two significant technical challenges — one around security, one around data constraints — that pushed us to think more deeply about architecture and user privacy.</p>
+
+                    <h3 class="subsection-title">Challenge 1 — Username Authentication</h3>
+                    <p>Firebase Authentication natively supports email/password login only. But asking users to remember their email every time they open the app felt impersonal and at odds with Inly's tone. We wanted users to log in with their username — something more memorable and human.</p>
+
+                    <div class="challenge-block">
+                        <div class="challenge-side problem">
+                            <span class="challenge-label">The Problem</span>
+                            <p>Firebase's <code>signInWithEmailAndPassword()</code> requires an email address. There is no built-in method for username-based authentication, and no way to bypass this without coordinating across multiple Firebase services.</p>
+                        </div>
+                        <div class="challenge-side solution">
+                            <span class="challenge-label">The Solution</span>
+                            <p>A two-step lookup: if the input doesn't contain an "@", we query Firestore for the user document matching that username, retrieve their linked email, then pass it to Firebase Auth. The user experiences a seamless single-step login.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">Challenge 2 — Friend Privacy & Consent</h3>
+                    <p>During development, we discovered that our initial friends system allowed any user to add another person and immediately access their mood data — without the other person's knowledge or consent. This was a significant privacy concern for an app built around emotional vulnerability.</p>
+
+                    <div class="challenge-block">
+                        <div class="challenge-side problem">
+                            <span class="challenge-label">The Problem</span>
+                            <p>User A adds User B. User B's posts immediately appear on User A's feed. User B has no idea their emotional data is being accessed by a stranger.</p>
+                        </div>
+                        <div class="challenge-side solution">
+                            <span class="challenge-label">Proposed Solution</span>
+                            <p>A mutual consent friend request system: requests stored in a FriendRequests collection, displayed on the recipient's friends page, with accept/deny logic that conditionally grants feed access. Not fully implemented due to time constraints, but fully scoped.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">Challenge 3 — Image Storage on Firebase Free Tier</h3>
+                    <p>Firebase's free tier imposes strict limits on data upload and download. Rather than uploading images to cloud storage, we stored local device URIs in Firestore. This works perfectly for the posting user — but when a friend retrieves that post, the local file path doesn't exist on their device, so the image fails to render.</p>
+
+                    <div class="callout">
+                        <span class="callout-label">Our Workaround</span>
+                        <p>When an image fails to load, the mood card falls back to a gradient background using the emotion's colour. The feed remains visually consistent, and the emotional context is preserved — even without the photo. Ideally, we would have explored cloud storage providers or image compression to solve this more robustly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reflection -->
+            <section id="reflection" class="content-section">
+                <div class="section-header">
+                    <span class="section-number">06</span>
+                    <h2 class="section-title">Reflection</h2>
+                </div>
+                <div class="section-body">
+                    <p class="lead-text">Inly started as a question about whether technology could bring people closer to themselves — and ended as a working app that, imperfect as it is, actually tries to answer that question.</p>
+
+                    <div class="reflection-grid">
+                        <div class="reflection-card">
+                            <span class="reflection-name">Sabrina</span>
+                            <p>I wanted to create something that let users reconnect with their inner life without a tedious setup. The colour overlay on photos and the mood calendar were the design decisions I'm most proud of — they let users see their feelings at a glance, without needing to read a single word. Through Inly, I feel we met our main focus: an app that helps users re-center despite technology being part of the disconnection in today's world.</p>
+                        </div>
+                        <div class="reflection-card">
+                            <span class="reflection-name">Khushy</span>
+                            <p>The biggest thing I learned was breaking down big ideas into manageable, sequenced pieces. With multiple interrelated screens, we had to think carefully about how each page affected the others. There were moments we had to step back and re-evaluate entirely — which taught me that iteration isn't a failure, it's the process. In the end, we translated our wireframes into screens quite accurately, and shipped a semi-working product we're genuinely proud of.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">Key Takeaways</h3>
+                    <div class="takeaways-grid">
+                        <div class="takeaway">
+                            <span class="takeaway-num">01</span>
+                            <p><strong>Plan for privacy early.</strong> The friend consent issue was only discovered mid-build. Thinking about data access and user consent at the wireframe stage would have saved significant rework.</p>
+                        </div>
+                        <div class="takeaway">
+                            <span class="takeaway-num">02</span>
+                            <p><strong>Know your infrastructure limits.</strong> The Firebase free-tier image storage constraint was a known risk we underestimated. Scoping storage solutions earlier would have led to a more complete product.</p>
+                        </div>
+                        <div class="takeaway">
+                            <span class="takeaway-num">03</span>
+                            <p><strong>Simplicity enables depth.</strong> The least complex interaction — selecting an emotion — became the most meaningful moment in the app. Restraint in design lets feeling come through.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Project -->
+            <section class="next-section">
+                <span class="next-label">next project</span>
+                <a href="snacki.html" class="next-link">Snacki →</a>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="contact">Get in touch <a href="mailto:skt9@sfu.ca">skt9@sfu.ca</a></div>
+                <div class="footer-nav">
+                    <a href="homepage.html">Work</a>
+                    <a href="aboutme.html">About Me</a>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.content-section');
+        const links = document.querySelectorAll('.sidebar-link');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    links.forEach(l => l.classList.remove('active'));
+                    const id = entry.target.getAttribute('id');
+                    const active = document.querySelector(`.sidebar-link[data-section="${id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        sections.forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
